@@ -134,17 +134,17 @@ export default function Home() {
             <h3 className="text-4xl font-bold py-5 font-montserrat text-gray-900 dark:text-gray-100">Portfolio</h3>
             <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-4 w-full" />
           </div>
-          <div className="space-y-12 py-12">
+            <div className="max-w-8xl mx-auto space-y-12 py-12">
             {projects.map((project, index) => (
               <div key={index}>
                 <div
-                  className={`flex flex-col items-center lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''} space-y-4 lg:space-y-0 lg:space-x-8`}
+                  className={`flex flex-col items-center lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''} space-y-4 lg:space-y-0 lg:space-x-8 mb-8`}
                 >
                   <div className="bg-white dark:bg-gray-800 w-full lg:w-1/2 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                     <Image src={project.src} className="rounded-lg object-cover w-full h-80" alt={project.alt} />
                   </div>
                   <div className="flex flex-col justify-center w-full lg:w-1/2 text-center lg:text-left">
-                    <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
+                    <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
                     <p className="mt-4 text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                   </div>
                 </div>
