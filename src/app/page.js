@@ -4,6 +4,7 @@ import Image from "next/image";
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiOutlineMail, AiFillLinkedin, AiFillGithub} from 'react-icons/ai';
 import myphoto from '/public/myphoto.jpg';
+import kaggle from '/public/kaggle.png';
 import rmcnn from '/public/rmcnn.png';
 import mlrnn from '/public/mlrnn.png';
 import ibm from '/public/ibm.png';
@@ -16,10 +17,12 @@ export default function Home() {
   const projects = [
     { src: rmcnn, alt: "RMCNN Project", title: "A Study of CNN Models On the Detection of Hate Speech", 
       description: "Created a working CNN model with TensorFlow and Keras to detect labeled hate speech Tweets on the dataset. </br> <a href='https://colab.research.google.com/drive/1UOQeGcZg-S1kmEo88kBVrQdRSQBjTUIp?usp=sharing' target='_blank' class='text-blue-500 hover:underline'>Link to project</a>" },
+    { src: kaggle, alt: "Kaggle Project", title: "Experimental Stock Analysis", 
+      description: "Utilized data from Yahoo Finance to predict stock trends with Python libraries. </br> <a href='https://www.kaggle.com/code/foxy0309/experimental-analysis-on-stock' target='_blank' class='text-blue-500 hover:underline'>Link to project</a>" },
     { src: mlrnn, alt: "MLRNN Project", title: "Implementation of Neural Networks in OCR of Handwritten Cyrillic Characters",
        description: "Created a working RNN model with TensorFlow and Keras to conduct OCR on a dataset of Cyrillic characters. </br> <a href='https://colab.research.google.com/drive/1SUb8zyJzHTCkhlweAzWPeBSK_RF0kWhw?usp=sharing' target='_blank' class='text-blue-500 hover:underline'>Link to project</a>" },
     { src: ibm, alt: "IBM Project", title: "IBM Data Science Capstone", 
-      description: "Conducted a full analysis of a SpaceX dataset provided by IBM on Coursera. </br> <a href='https://github.com/Foxy0309/Data-Science-Capstone' target='_blank' class='text-blue-500 hover:underline'>Link to project repository</a>" },
+      description: "Conducted a full analysis of a SpaceX dataset provided by IBM on Coursera. </br> <a href='https://github.com/Foxy0309/Data-Science-Capstone' target='_blank' class='text-blue-500 hover:underline'>Link to project repository</a>" },  
     { src: innable, alt: "Innable Project", title: "Innable", 
       description: "Hotel management system that has both admin and user perspectives built with Java, JavaFX and MySQL. </br> <a href='https://github.com/pvscia/Hotel-Management' target='_blank' class='text-blue-500 hover:underline'>Link to project repository</a>" },
     { src: flyhigh, alt: "FlyHigh Project", title: "FlyHigh", 
@@ -138,7 +141,7 @@ export default function Home() {
             {projects.map((project, index) => (
               <div key={index}>
                 <div
-                  className={`flex flex-col items-center lg:flex-row ${index % 2 === 0 ? 'lg:flex-row-reverse' : ''} space-y-4 lg:space-y-0 lg:space-x-8 mb-8`}
+                  className={`flex flex-col items-center lg:flex-row ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''} space-y-4 lg:space-y-0 lg:space-x-8 mb-8`}
                 >
                   <div className="bg-white dark:bg-gray-800 w-full lg:w-1/2 p-6 rounded-lg shadow-lg transform transition duration-500 hover:scale-105">
                     <Image src={project.src} className="rounded-lg object-cover w-full h-80" alt={project.alt} />
@@ -148,7 +151,7 @@ export default function Home() {
                     <p className="text-xl mt-4 text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                   </div>
                 </div>
-                {index === 2 && (
+                {index === 3 && (
                   <div className="my-16 text-center">
                     <h2 className="text-4xl font-bold py-5 font-montserrat text-gray-900 dark:text-gray-100">Contributed in:</h2>
                     <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-4 w-full" />
