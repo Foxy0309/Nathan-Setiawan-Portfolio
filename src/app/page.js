@@ -145,7 +145,7 @@ export default function Home() {
                   </div>
                   <div className="flex flex-col justify-center w-full lg:w-1/2 text-center lg:text-left">
                     <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100">{project.title}</h3>
-                    <p className="mt-4 text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
+                    <p className="text-xl mt-4 text-gray-700 dark:text-gray-300" dangerouslySetInnerHTML={{ __html: project.description }}></p>
                   </div>
                 </div>
                 {index === 2 && (
