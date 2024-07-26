@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiOutlineMail, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { AiOutlineMail, AiFillLinkedin, AiFillGithub, AiOutlineDownload } from "react-icons/ai";
 import myphoto from "/public/myphoto.jpg";
 import kaggle from "/public/kaggle.png";
 import rmcnn from "/public/rmcnn.png";
@@ -157,6 +157,15 @@ export default function Home() {
                   <AiFillGithub />
                 </a>
               </div>
+                <a
+                  href="/CV Nathan Setiawan.pdf"
+                  download="CV Nathan Setiawan.pdf"
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white py-2 rounded-md mt-5 flex items-center justify-center hover:bg-teal-600 transition duration-200 max-w-2xl mx-auto lg:mx-0"
+                  style={{ width: "auto" }}
+                >
+                  <AiOutlineDownload className="mr-2" />
+                  <span>Download CV</span>
+                </a>
             </div>
             <div className="relative rounded-full overflow-hidden mx-auto lg:mx-0 mt-10 lg:mt-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80">
               <Image className="rounded-full mx-auto" src={myphoto} alt="Nathan Setiawan"/>
