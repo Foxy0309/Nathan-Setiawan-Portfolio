@@ -105,32 +105,34 @@ export default function Home() {
         <section className="pt-24">
           <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between text-center lg:text-left p-10">
             <div className="lg:w-1/2 lg:flex lg:flex-col lg:justify-center">
-              <h2 className="text-5xl py-2 font-montserrat text-teal-600 font-medium md:text-6xl">Nathan Setiawan</h2>
-              <h3 className="text-2xl py-2 md:text-3xl font-montserrat text-gray-700 dark:text-gray-300">Data scientist and developer.</h3>
+              <h2 className="text-5xl py-2 font-montserrat text-teal-600 font-medium md:text-6xl">
+                Nathan Setiawan
+              </h2>
+              <h3 className="text-2xl py-2 md:text-3xl font-montserrat text-gray-700 dark:text-gray-300">
+                Data scientist and developer.
+              </h3>
               <p className="text-md py-5 leading-8 font-montserrat text-gray-700 dark:text-gray-300 md:text-xl max-w-2xl mx-auto lg:mx-0">
                 An eager individual always seeking to improve and learn. Has significant experience in the field of data science and 
                 is continuously studying more about the field. Hardworking and reliable, as well as experienced working in organizations.
               </p>
               <div className="text-5xl flex justify-center lg:justify-start gap-16 py-3 text-gray-600 dark:text-gray-400">
-                <a href="mailto:nathan.setiawan@binus.ac.id" target="_blank" rel="noopener noreferrer" 
-                className="hover:scale-110 transform transition-transform duration-200">
+                <a href="mailto:nathan.setiawan@binus.ac.id" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transform transition-transform duration-200">
                   <AiOutlineMail />
                 </a>
-                <a href="https://www.linkedin.com/in/natset/" target="_blank" rel="noopener noreferrer" 
-                className="hover:scale-110 transform transition-transform duration-200">
+                <a href="https://www.linkedin.com/in/natset/" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transform transition-transform duration-200">
                   <AiFillLinkedin />
                 </a>
-                <a href="https://github.com/Foxy0309" target="_blank" rel="noopener noreferrer" 
-                className="hover:scale-110 transform transition-transform duration-200">
+                <a href="https://github.com/Foxy0309" target="_blank" rel="noopener noreferrer" className="hover:scale-110 transform transition-transform duration-200">
                   <AiFillGithub />
                 </a>
               </div>
             </div>
-          <div className="relative rounded-full overflow-hidden mx-auto lg:mx-0 mt-10 lg:mt-0 w-80 h-80 md:w-96 md:h-96 flex-shrink-0">
-            <Image className="rounded-full mx-auto" src={myphoto} alt="Nathan Setiawan"/>
+            <div className="relative rounded-full overflow-hidden mx-auto lg:mx-0 mt-10 lg:mt-0 w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 flex-shrink-0">
+              <Image className="rounded-full mx-auto" src={myphoto} alt="Nathan Setiawan"/>
+            </div>
           </div>
-        </div>  
-      </section>
+        </section>
+
 
         <section className="py-10">
           <div className="text-center mb-12">
