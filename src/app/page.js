@@ -87,7 +87,7 @@ export default function Home() {
     {
       institution: "Universiti Malaya",
       description: "Exchange Student, Majoring in Computer Science",
-      duration: "2023 - 2024 (Even Semester)",
+      duration: "2024 (Even Semester)",
     },
     {
       institution: "Tunas Bangsa Christian School",
@@ -228,17 +228,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="py-5">
+        <section className="py-10">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold font-montserrat text-gray-900 dark:text-gray-100 py-5">
+            <h2 className="text-4xl font-bold py-5 font-montserrat text-gray-900 dark:text-gray-100">
               Education
             </h2>
             <hr className="border-t-2 border-gray-300 dark:border-gray-600 my-4 w-full" />
-            <div className="mt-4 space-y-4 mx-auto md:px-10 lg:px-40">
+            <div className="mt-4 space-y-6 mx-auto px-5 md:px-10 lg:px-40">
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 py-4 px-6 rounded-md flex justify-between items-center"
+                  className="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 py-4 px-6 rounded-md flex flex-col md:flex-row justify-between items-start md:items-center space-y-2 md:space-y-0"
                   onClick={() => toggleDescription(index)}
                 >
                   <div className="flex-1 text-left">
@@ -249,8 +249,8 @@ export default function Home() {
                       </p>
                     )}
                   </div>
-                  <div className="flex items-center">
-                    <span className="text-gray-600 dark:text-gray-400 mr-4">
+                  <div className="flex items-center space-x-4">
+                    <span className="text-gray-600 dark:text-gray-400">
                       {edu.duration}
                     </span>
                     <button className="text-gray-600 dark:text-gray-400">
