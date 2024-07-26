@@ -18,9 +18,9 @@ export default function Home() {
     {
       src: kaggle,
       alt: "Kaggle Project",
-      title: "A Study of CNN Models On the Detection of Hate Speech",
+      title: "American Index Stock Analysis",
       description:
-        "Created a working CNN model with TensorFlow and Keras to detect labeled hate speech Tweets on the dataset. </br> <a href='https://colab.research.google.com/drive/1UOQeGcZg-S1kmEo88kBVrQdRSQBjTUIp?usp=sharing' target='_blank' class='text-blue-500 hover:underline'>Link to project</a>",
+        "Used stock data from Yahoo Finance to conduct a stock trend analysis with Python. </br> <a href='https://www.kaggle.com/code/foxy0309/experimental-analysis-on-stock' target='_blank' class='text-blue-500 hover:underline'>Link to project</a>",
     },
     {
       src: rmcnn,
